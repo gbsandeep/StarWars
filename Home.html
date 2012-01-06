@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Star Wars</title>
+	<style type="text/css" media="screen">
+	body {  
+		margin:0px;  
+		padding:0px;  
+		text-align:center;  
+		background: #000;
+	}  
+  canvas{  
+		outline:0;  
+		border:1px solid #fff;  
+		margin-left: auto;  
+		margin-right: auto; 
+		position: absolute; 
+		top: 130px;
+		left: 0px;
+		background:url("Images/PageBackground.jpg") 
+	}  
+	#title
+	{
+		color:orange;
+		text-align:left;
+		font-family:"impact";
+		font-size:20px;
+	}
+	#instructions
+	{
+		color:white;
+		text-align:left;
+		font-family:"verdana";
+		font-size:12px;
+	}
+	#information
+	{
+		color:white;
+		text-align:left;
+		font-family:"Times New Roman";
+		font-size:11px;
+	}
+  </style>
+  <script data-main="Main" src="require.js"></script>
+	<script type="text/javascript">
+	</script>
+	</head>	
+<body style="background=black;">
+	<div align="left"><br />
+		<span id="title">&nbsp;&nbsp;Star Wars v0.1.1 (alpha)</span><br />
+		<span id="instructions">&nbsp;&nbsp;
+					1. Press arrows on the keyboard to move the SPACESHIP. <br />&nbsp;&nbsp;
+					2. Press SPACEBAR to fire the laser. <br />&nbsp;&nbsp;
+					3. Health: Meteor -> 3 hits, Alien Ship -> 5 hits, Your spaceship -> 5 hits or hit by another object
+		</span><br />
+		<span id="information">&nbsp;&nbsp;<input id="Restart" type="button" value="Restart" />&nbsp;&nbsp;Tested on IE9 and Chrome 16.0.912.63. Source code: main.js, <a href="mailto:gbsandeep@gmail.com">Report Bugs</a></span>
+	</div>
+	<canvas id="mainCanvas" />
+</body>
+</html>
+
