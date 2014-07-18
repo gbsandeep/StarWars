@@ -8,6 +8,13 @@
 		padding:0px;  
 		text-align:center;  
 		background: #000;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
 	}  
   canvas{  
 		outline:0;  
@@ -17,7 +24,8 @@
 		position: absolute; 
 		top: 130px;
 		left: 0px;
-		background:url("Images/PageBackground.jpg") 
+		background:url("Images/PageBackground.jpg");
+		cursor: none;
 	}  
 	#title
 	{
@@ -47,11 +55,12 @@
 	</head>	
 <body style="background=black;">
 	<div align="left"><br />
-		<span id="title">&nbsp;&nbsp;Star Wars v0.1.1 (alpha)</span><br />
+		<span id="title">&nbsp;&nbsp;Star Wars</span><br />
 		<span id="instructions">&nbsp;&nbsp;
-					1. Press arrows on the keyboard to move the SPACESHIP. <br />&nbsp;&nbsp;
-					2. Press SPACEBAR to fire the laser. <br />&nbsp;&nbsp;
-					3. Health: Meteor -> 3 hits, Alien Ship -> 5 hits, Your spaceship -> 5 hits or hit by another object
+					Use Mouse to move the spaceship. Left Click Mouse to fire the laser. OR Press arrows on the keyboard to move the SPACESHIP. Press SPACEBAR to fire the laser. <br />&nbsp;&nbsp;
+					Health: Meteor destroy with 3 strikes, 
+							Alien Ship destroy with 5 strikes
+							User Spaceship - destroys after being hit by another object or 5 laser strikes
 		</span><br />
 		<span id="information">&nbsp;&nbsp;<input id="Restart" type="button" value="Restart" />&nbsp;&nbsp;Tested on IE9 and Chrome 16.0.912.63. Source code: main.js, <a href="mailto:gbsandeep@gmail.com">Report Bugs</a></span>
 	</div>

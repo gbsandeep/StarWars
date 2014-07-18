@@ -5,7 +5,7 @@ var GameEngine = function(){
 	var spaceship;
 	// meteor movement
 	var dx = -5, dy = 0;
-	var dSpaceship = 5, adjSpaceshipPosition = 20;
+	var dSpaceship = 10, adjSpaceshipPosition = 20;
 	var gameStatus;
 	function redraw(){
 				// Clear older shapes
@@ -149,7 +149,10 @@ var GameEngine = function(){
 					spaceship.X += dSpaceship;
 			}
 		},
-		
+			move: function(x, y){
+				spaceship.X = x;
+				spaceship.Y = y;
+		},
 		//Emit laser from the spaceship
 		spacebar: function(){
 			if(spaceship){
